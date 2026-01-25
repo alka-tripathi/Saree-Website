@@ -35,6 +35,10 @@
          background: linear-gradient(135deg, #57370D,#FFE998);
 }
 /* background: linear-gradient(135deg, #C6AE73,#E9E2DC); */
+.green-bg{
+   background: linear-gradient(135deg, #90A955,#ECF39E);
+
+}
 
 
 /* Image group on left */
@@ -91,6 +95,12 @@
 
 .overlay.pink{
     color:#C43670;
+}
+.overlay.green{
+  color:#31572C;
+}
+.overlay.green button{
+  background-color:#31572C; ;
 }
 .overlay.blue button{
     background-color:#0A1931;

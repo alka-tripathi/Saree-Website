@@ -1,16 +1,39 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Banner from './components/Banner';
-import Heading from './components/Heading';
-import SareeSection from './components/SareeSection';
+import Home from './components/Home';
+import History from './components/History';
+import About from './components/About';
+import Images from './components/Images';
+import Cart from './components/Cart';
 
 function App() {
   return (
     <div className="app-container">
       <Navbar />
-      <Banner></Banner>
-      <Heading></Heading>
-      <SareeSection></SareeSection>
+
+      <Routes>
+        <Route
+          path="/"
+          element={<Home />}
+        />
+        <Route
+          path="/about"
+          element={<About />}
+        />
+        <Route
+          path="/history"
+          element={<History />}
+        />
+        <Route
+          path="/images"
+          element={<Images />}
+        />
+        <Route
+          path="/addtocart"
+          element={<Cart />}
+        />
+      </Routes>
     </div>
   );
 }

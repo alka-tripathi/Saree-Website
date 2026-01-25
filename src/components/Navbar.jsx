@@ -19,6 +19,9 @@ function Navbar() {
       <div className="nav-right">
         <ul className="nav-links">
           <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
             <NavLink to="/about">About</NavLink>
           </li>
           <li>

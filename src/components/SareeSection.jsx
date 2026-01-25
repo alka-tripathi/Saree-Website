@@ -72,12 +72,12 @@ function SareeSection() {
       <div className="banner green-bg">
         <div className="image-group">
           <img src="https://i.pinimg.com/736x/02/cf/0e/02cf0ef189149928c5289aa024d911ce.jpg" />
-          <img src="  https://i.pinimg.com/736x/a9/40/09/a940093c663f2061137e15cb17a5c700.jpg" />
-          <img src="https://i.pinimg.com/1200x/06/3b/6d/063b6d088bb8d5b3192e226546d3cfe0.jpg" />
+          <img src="  https://i.pinimg.com/736x/02/3c/c0/023cc07aa725d5372f5bb0ec3a49c739.jpg" />
+          <img src="https://i.pinimg.com/736x/51/70/bf/5170bf327cfdfc0dc3cdc5ae148899f1.jpg" />
         </div>
         <div className="overlay green">
-          <h2>Absolute White</h2>
-          <p>Purity, innocence, and spirituality</p>
+          <h2>Emerald Green</h2>
+          <p>Growth, renewal, and fertility</p>
           <button>Explore</button>
         </div>
       </div>
