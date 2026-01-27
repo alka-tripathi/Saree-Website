@@ -1,0 +1,66 @@
+/* Outer wrapper (handles alignment on page) */
+.card-container {
+  display: flex;
+  justify-content: center;   /* centers card horizontally */
+  padding: 20px;
+}
+
+/* Actual card */
+.saree-card {
+  width: 260px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.saree-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* Image section */
+.image-wrapper {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content section */
+.card-content {
+  padding: 16px;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-size: 1.2rem;
+  margin: 6px 0;
+}
+
+.card-content h3 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.card-content hr {
+  width: 60%;
+  margin: 8px auto;
+  border: 0.5px solid #ddd;
+}
+
+.color {
+  font-size: 0.9rem;
+  color: #999;
+}

@@ -1,7 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SareeSection.css';
 
-function SareeSection() {
+function SareeSection({ data }) {
+  const navigate = useNavigate();
+  function goToCollection(color) {
+    navigate(`/${color}/collection`);
+  }
+
   return (
     <div className="AllBanners">
       <div className="banner red-bg">
@@ -13,7 +19,12 @@ function SareeSection() {
         <div className="overlay">
           <h2>Red Elegance</h2>
           <p>Love, passion, fertility, and prosperity</p>
-          <button>Explore</button>
+          <button
+            onClick={() => goToCollection('red')}
+            name="red"
+          >
+            Explore
+          </button>
         </div>
       </div>
 
@@ -26,7 +37,7 @@ function SareeSection() {
         <div className="overlay blue">
           <h2>Royal Blue</h2>
           <p>Tranquility, spirituality, and deep devotion</p>
-          <button>Explore</button>
+          <button onClick={() => goToCollection('blue')}>Explore</button>
         </div>
       </div>
 
@@ -39,7 +50,7 @@ function SareeSection() {
         <div className="overlay white">
           <h2>Absolute White</h2>
           <p>Purity, innocence, and spirituality</p>
-          <button>Explore</button>
+          <button onClick={() => goToCollection('white')}>Explore</button>
         </div>
       </div>
 
@@ -52,7 +63,7 @@ function SareeSection() {
         <div className="overlay pink">
           <h2>Mushy Pink</h2>
           <p>Femininity, grace, and charm</p>
-          <button>Explore</button>
+          <button onClick={() => goToCollection('pink')}>Explore</button>
         </div>
       </div>
 
@@ -65,7 +76,7 @@ function SareeSection() {
         <div className="overlay golden">
           <h2>Elegant Golden</h2>
           <p>Prosperity, tradition, and elegance</p>
-          <button>Explore</button>
+          <button onClick={() => goToCollection('golden')}>Explore</button>
         </div>
       </div>
 
@@ -78,7 +89,7 @@ function SareeSection() {
         <div className="overlay green">
           <h2>Emerald Green</h2>
           <p>Growth, renewal, and fertility</p>
-          <button>Explore</button>
+          <button onClick={() => goToCollection('green')}>Explore</button>
         </div>
       </div>
     </div>
