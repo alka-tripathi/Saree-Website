@@ -15,10 +15,13 @@ function Card({ saree }) {
         </div>
 
         <div className="card-content">
-          <h2>{saree.type}</h2>
-          <hr />
+          <h2 style={{ color: '#710A14' }}>{saree.type}</h2>
+          <hr></hr>
+          <h3 style={{ color: '#8b1e3f' }}>Fabric: {saree.fabric}</h3>
+          <p style={{ color: '#B18582' }}> {saree.origin}</p>
+          {/* <hr />
           <h3>{saree.origin}</h3>
-          <p className="color">Color: {saree.color}</p>
+          <p className="color">Color: {saree.color}</p> */}
         </div>
       </div>
     </div>

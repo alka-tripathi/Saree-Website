@@ -1,9 +1,5 @@
 /* Outer wrapper (handles alignment on page) */
-.card-container {
-  display: flex;
-  justify-content: center;   /* centers card horizontally */
-  padding: 20px;
-}
+
 
 /* Actual card */
 .saree-card {
