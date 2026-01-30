@@ -77,15 +77,15 @@ const sarees = [
   { id: 54, type: "Soft Cotton Saree", origin: "Andhra Pradesh", price: 1799, fabric: "Cotton", color: "pink", image: "https://i.pinimg.com/474x/03/fd/9f/03fd9f0d1672e42fd199f008413744e9.jpg" },
   { id: 55, type: "Designer Saree", origin: "Mumbai", price: 5999, fabric: "Silk Blend", color: "pink", image: "https://i.pinimg.com/1200x/05/c1/77/05c17706ae06570287b6dbb10aebdc98.jpg" },
 
-   { id: 56, type: "Kerala Kasavu Saree", origin: "Kerala", price: 2499, fabric: "Cotton", color: "white", image: "https://i.pinimg.com/1200x/1f/2e/3d/1f2e3d4c5b6a.jpg" },
+   { id: 56, type: "Kerala Kasavu Saree", origin: "Kerala", price: 2499, fabric: "Cotton", color: "white", image: "https://i.pinimg.com/736x/51/5f/02/515f02a1df2587af34bffea373a11478.jpg" },
 
-  { id: 57, type: "Chikankari Saree", origin: "Uttar Pradesh", price: 3199, fabric: "Cotton Silk", color: "white", image: "https://i.pinimg.com/1200x/4b/5c/6d/4b5c6d7e8f.jpg" },
+  { id: 57, type: "Chikankari Saree", origin: "Uttar Pradesh", price: 3199, fabric: "Cotton Silk", color: "white", image: "https://i.pinimg.com/736x/a5/b0/47/a5b0477f2ced786901334c836c40a4d5.jpg" },
 
-  { id: 58, type: "Linen Handloom Saree", origin: "West Bengal", price: 2899, fabric: "Linen", color: "white", image: "https://i.pinimg.com/1200x/7d/8e/9f/7d8e9f0a.jpg" },
+  { id: 58, type: "Linen Handloom Saree", origin: "West Bengal", price: 2899, fabric: "Linen", color: "white", image: "https://i.pinimg.com/1200x/06/a6/7a/06a67ac60741306250de852dfddecc64.jpg" },
 
-  { id: 59, type: "Organza Silk Saree", origin: "Mumbai", price: 4599, fabric: "Organza Silk", color: "white", image: "https://i.pinimg.com/1200x/2c/3d/4e/2c3d4e5f6a.jpg" },
+  { id: 59, type: "Organza Silk Saree", origin: "Mumbai", price: 4599, fabric: "Organza Silk", color: "white", image: "https://i.pinimg.com/1200x/04/b5/d6/04b5d688c38ff8023c424c801d2ebc54.jpg" },
 
-  { id: 60, type: "Tussar Silk Saree", origin: "Bihar", price: 5299, fabric: "Tussar Silk", color: "white", image: "https://i.pinimg.com/1200x/9a/8b/7c/9a8b7c6d.jpg" }
+  { id: 60, type: "Tussar Silk Saree", origin: "Bihar", price: 5299, fabric: "Tussar Silk", color: "white", image: "https://i.pinimg.com/736x/b6/c7/ce/b6c7ce981423105091a54647cddd656e.jpg" }
 ];
 
 export default sarees;

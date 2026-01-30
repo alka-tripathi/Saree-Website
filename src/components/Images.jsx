@@ -50,7 +50,7 @@ function Videos() {
 
 const videoData = [
   {
-    video: 'https://assets.pinterest.com/ext/embed.html?id=1016406209656182282',
+    video: 'https://assets.pinterest.com/ext/embed.html?id=1049338781936729546',
     title: 'Nature',
     author: '@video_creator',
   },
