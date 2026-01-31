@@ -1,0 +1,12 @@
+/* AddtoCart.css */
+
+.card-container {
+  display: flex;               /* Flex layout */
+  flex-wrap: wrap;             /* Allow cards to go to the next line */
+  justify-content: center;     /* Center cards horizontally */
+  align-items: flex-start;     /* Align cards to the top */
+  /* Optional: light background */
+}
+
+
+

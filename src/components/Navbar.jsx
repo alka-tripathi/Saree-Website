@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaBagShopping } from 'react-icons/fa6';
 import './Navbar.css';
 
 function Navbar() {
@@ -28,10 +29,12 @@ function Navbar() {
             <NavLink to="/history">History</NavLink>
           </li>
           <li>
-            <NavLink to="/images">Images</NavLink>
+            <NavLink to="/images">Textures</NavLink>
           </li>
           <li>
-            <NavLink to="/addtocart">Cart</NavLink>
+            <NavLink to="/addtocart">
+              Cart <FaBagShopping></FaBagShopping>
+            </NavLink>
           </li>
         </ul>
 

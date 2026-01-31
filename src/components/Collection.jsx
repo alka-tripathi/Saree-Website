@@ -1,10 +1,11 @@
 import './collection.css';
 import { useParams } from 'react-router-dom';
 import sarees from '../data';
+import Footer from './Footer';
 
 import Card from './Card';
 
-function Collection() {
+function Collection({ addToCart }) {
   const { color } = useParams();
 
   const colorMap = {
@@ -14,6 +15,10 @@ function Collection() {
     pink: '#c05a84',
     white: '#eaeaea',
     golden: '#b89b3e',
+  };
+
+  const handleAddToCart = (saree) => {
+    console.log('Received from Card:', saree);
   };
 
   const themeColor = colorMap[color] || '#333';
@@ -39,9 +44,11 @@ function Collection() {
           <Card
             key={saree.id}
             saree={saree}
+            addToCart={addToCart}
           />
         ))}
       </div>
+      <Footer></Footer>
     </div>
   );
 }

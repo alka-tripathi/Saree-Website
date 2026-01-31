@@ -1,0 +1,36 @@
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 80px;
+  overflow-x: hidden;
+}
+
+.about-left,
+.about-right {
+  flex: 1;
+}
+.about-right p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+/* Highlight important words */
+.about-right .highlight {
+  color: #8b1e3f;
+  font-weight: 600;
+}
+
+/* Decorative left border for creativity */
+.about-right {
+  padding-left: 30px;
+  border-left: 4px solid #8b1e3f;
+}
+
+/* Heading styling */
+.about-right h1 {
+  color: #8b1e3f;
+  margin-bottom: 20px;
+}
