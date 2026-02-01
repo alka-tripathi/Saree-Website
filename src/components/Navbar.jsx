@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaBagShopping } from 'react-icons/fa6';
-import './Navbar.css';
+import './navbar.css';
 
 function Navbar() {
   const [searchTerm, setSearchTerm] = useState('');
