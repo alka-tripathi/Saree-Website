@@ -1,6 +1,6 @@
 import React from 'react';
 import AddtoCart from './AddtoCart';
-import './addtoCart.css';
+import './AddtoCart.css';
 
 function Cart({ sarees, onRemove }) {
   const totalPrice = sarees.reduce((sum, item) => sum + item.price, 0);

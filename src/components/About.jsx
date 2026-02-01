@@ -2,7 +2,7 @@ import React from 'react';
 import AboutImages from './AboutImages';
 import AboutUs from './AboutUs';
 import Footer from './Footer';
-import './about.css';
+import './About.css';
 
 function About() {
   return (
