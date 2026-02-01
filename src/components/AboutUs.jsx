@@ -20,16 +20,6 @@ function AboutUs() {
         passed down through generations.
       </p>
 
-      {/* <p>
-        The word <span className="highlight">Satika</span> comes from Sanskrit,
-        meaning “something that is wrapped around.” True to its meaning, Satika
-        represents how a saree wraps together{' '}
-        <span className="highlight">
-          tradition, craftsmanship, and womanhood
-        </span>{' '}
-        in a single graceful form.
-      </p> */}
-
       <p>
         A core purpose of Satika is <span className="highlight">awareness</span>
         . We believe women should know what they are wearing—where it comes

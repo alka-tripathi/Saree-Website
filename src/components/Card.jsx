@@ -1,7 +1,5 @@
 import React from 'react';
 import './card.css';
-import Banner from './Banner';
-import Footer from './Footer';
 import { Button } from '@mui/material';
 
 function Card({ saree, addToCart }) {
