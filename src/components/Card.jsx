@@ -1,5 +1,5 @@
 import React from 'react';
-import './Card.css';
+import './card.css';
 import Banner from './Banner';
 import Footer from './Footer';
 import { Button } from '@mui/material';

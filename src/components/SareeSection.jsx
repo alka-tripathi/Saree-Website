@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './SareeSection.css';
+import './sareeSection.css';
 
 function SareeSection({ data }) {
   const navigate = useNavigate();
