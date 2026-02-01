@@ -20,7 +20,7 @@ function AddtoCart({ saree, onRemove }) {
         <CardContent sx={{ height: 90, overflow: 'hidden', py: 1 }}>
           <Typography
             gutterBottom
-            variant="h6"
+            variant="h7"
             component="div"
           >
             {saree.type}
