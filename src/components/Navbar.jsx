@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       {/* Left: Logo */}
-      <div className="logo">Sakita</div>
+      <div className="logo">Satika</div>
 
       {/* Right: Nav items + search */}
       <div className="nav-right">
