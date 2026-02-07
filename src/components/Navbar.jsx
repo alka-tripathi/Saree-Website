@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaBagShopping } from 'react-icons/fa6';
-import { FaBars, FaTimes } from 'react-icons/fa';
 import './navbar.css';
 
 function Navbar() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -15,19 +13,11 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      {/* Logo */}
+      {/* Left: Logo */}
       <div className="logo">Satika</div>
 
-      {/* Hamburger (Mobile only) */}
-      <div
-        className="hamburger"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        {menuOpen ? <FaTimes /> : <FaBars />}
-      </div>
-
-      {/* Right Section */}
-      <div className={`nav-right ${menuOpen ? 'active' : ''}`}>
+      {/* Right: Nav items + search */}
+      <div className="nav-right">
         <ul className="nav-links">
           <li>
             <NavLink to="/">Home</NavLink>
@@ -43,7 +33,7 @@ function Navbar() {
           </li>
           <li>
             <NavLink to="/addtocart">
-              Cart <FaBagShopping />
+              Cart <FaBagShopping></FaBagShopping>
             </NavLink>
           </li>
         </ul>
@@ -65,4 +55,5 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar;  
+
