@@ -16,6 +16,7 @@ function Card({ saree, addToCart }) {
 
           <div className="card-content">
             <h2 style={{ color: '#710A14' }}>{saree.type}</h2>
+            <h3>₹{saree.price}</h3>
             <hr></hr>
             <h3 style={{ color: '#8b1e3f' }}>Fabric: {saree.fabric}</h3>
             <p style={{ color: '#B18582' }}> {saree.origin}</p>

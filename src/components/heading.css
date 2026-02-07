@@ -5,29 +5,50 @@
   background-color: #faf7f4;
 }
 
+/* Brand Title */
 .brand-name {
-  font-size: 48px;
+  font-size: clamp(32px, 5vw, 48px); 
   font-weight: 600;
-  color: #8b1e3f;   /* deep maroon */
+  color: #8b1e3f;
   letter-spacing: 2px;
   margin-bottom: 12px;
 }
 
+
 .brand-tagline {
-  font-size: 18px;
+  font-size: clamp(14px, 2vw, 18px);
   color: #555;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
+  padding: 0 10px;
 }
 
-/* Responsive */
+
+@media (max-width: 1024px) {
+  .heading-box {
+    padding: 50px 20px;
+  }
+}
+
+
 @media (max-width: 768px) {
+  .heading-box {
+    padding: 40px 15px;
+  }
+
   .brand-name {
-    font-size: 36px;
+    letter-spacing: 1px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .heading-box {
+    padding: 30px 12px;
   }
 
   .brand-tagline {
-    font-size: 16px;
+    line-height: 1.5;
   }
 }

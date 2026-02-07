@@ -1,22 +1,36 @@
 .outer-box {
   display: flex;
   width: 100%;
-  height: 400px;     
+  min-height: 400px;   /* 🔽 reduced height */
   overflow: hidden;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
 }
 
 .inner-box {
-    margin-top: 2rem;
-  flex: 1;           
+  margin-top: 1.5rem;
+  flex: 0 1 30%;   /* 🔽 images slightly smaller */
 }
 
 .inner-box img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  display: block;     
+  height:330px;   /* 🔽 controlled height */
+  object-fit: cover;
+  display: block;
+  
 }
+@media (max-width: 1024px) {
+  .outer-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
+  .inner-box {
+    flex: 0 1 45%;
+  }
 
-/*Heading.jsx styling*/
-
+  .inner-box img {
+    height: 260px;
+  }
+}

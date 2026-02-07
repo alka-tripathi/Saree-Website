@@ -10,113 +10,84 @@
 .banner {
   position: relative;
   width: 100%;
-  height: 330px;
+  min-height: 330px;
   border-radius: 14px;
   overflow: hidden;
+  padding: 20px;
 }
 
-/* Background (lighter professional red) */
+/* Background Gradients */
 .red-bg {
   background: linear-gradient(135deg, #560B18,#F2E5C6);
 }
-.blue-bg{
-      background: linear-gradient(135deg, #0D3B66,#FAF0CA);
-
+.blue-bg {
+  background: linear-gradient(135deg, #0D3B66,#FAF0CA);
 }
-.pink-bg{
-     background: linear-gradient(135deg, #E76993,#E9D4C2);
-
+.pink-bg {
+  background: linear-gradient(135deg, #E76993,#E9D4C2);
 }
-.white-bg{
-
-         background: linear-gradient(135deg, #E8E3DD,#FAF7F1);
+.white-bg {
+  background: linear-gradient(135deg, #E8E3DD,#FAF7F1);
 }
-.golden-bg{
-         background: linear-gradient(135deg, #57370D,#FFE998);
+.golden-bg {
+  background: linear-gradient(135deg, #57370D,#FFE998);
 }
-/* background: linear-gradient(135deg, #C6AE73,#E9E2DC); */
-.green-bg{
-   background: linear-gradient(135deg, #90A955,#ECF39E);
-
+.green-bg {
+  background: linear-gradient(135deg, #90A955,#ECF39E);
 }
 
-
-/* Image group on left */
+/* Image group */
 .image-group {
   position: absolute;
   left: 30px;
   bottom: 20px;
   display: flex;
-  /* gap: 14px; */
   align-items: flex-end;
+  gap: 10px;
 }
 
-/* Images inside group */
+/* Images */
 .image-group img {
   width: 240px;
   height: 280px;
   object-fit: cover;
-  /* border-radius: 10px; */
   transition: transform 0.3s ease;
 }
 
-/* Slight lift on hover */
 .image-group img:hover {
   transform: translateY(-6px);
 }
 
-/* Text & button on right */
+/* Overlay text */
 .overlay {
   position: absolute;
   top: 50%;
-  right: 80px;          /* moved left slightly */
+  right: 80px;
   transform: translateY(-50%);
   text-align: right;
   color: #560B18;
 }
 
-.overlay.blue {
-    color:#0A1931;
-   
+/* Color overlays */
+.overlay.blue { color:#0A1931; }
+.overlay.white { color:#BDA896; }
+.overlay.white button { background-color:#BDA896; }
+.overlay.golden { color:#E9E2DC; }
+.overlay.golden button { background-color:#AD8330; }
+.overlay.pink { color:#C43670; }
+.overlay.green { color:#31572C; }
+.overlay.green button { background-color:#31572C; }
+.overlay.blue button { background-color:#0A1931; }
+.overlay.pink button { background-color:#C43670; }
 
-}
-.overlay.white{
-    color:#BDA896;
-}
-.overlay.white button{
-    background-color:#BDA896 ;
-}
-.overlay.golden{
-    color:#E9E2DC;
-}
-.overlay.golden button{
-    background-color: #AD8330;
-}
-
-.overlay.pink{
-    color:#C43670;
-}
-.overlay.green{
-  color:#31572C;
-}
-.overlay.green button{
-  background-color:#31572C; ;
-}
-.overlay.blue button{
-    background-color:#0A1931;
-
-}
-.overlay.pink button{
-    background-color: #C43670;
-
-}
 /* Heading */
 .overlay h2 {
   font-size: 32px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
-.overlay p{
-    padding-bottom:10px;
+
+.overlay p {
+  padding-bottom: 10px;
 }
 
 /* Button */
@@ -132,4 +103,73 @@
 
 .overlay button:hover {
   transform: translateY(-3px);
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+
+  .image-group img {
+    width: 180px;
+    height: 220px;
+  }
+
+  .overlay {
+    right: 40px;
+  }
+
+  .overlay h2 {
+    font-size: 26px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .banner {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  /* Move images to top */
+  .image-group {
+    position: static;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .image-group img {
+    width: 110px;
+    height: 160px;
+  }
+
+  /* Move overlay below images */
+  .overlay {
+    position: static;
+    transform: none;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .overlay h2 {
+    font-size: 24px;
+  }
+
+  .overlay button {
+    width: 60%;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+
+  .image-group img {
+    width: 90px;
+    height: 140px;
+  }
+
+  .overlay button {
+    width: 80%;
+  }
 }
